@@ -1,0 +1,98 @@
+body {
+  font-family: Nunito, sans-serif;
+  color: #1c1c1c;
+}
+
+header {
+  background: rgb(2, 0, 36);
+  color: #ffffff;
+}
+
+h2,
+h3 {
+  font-family: Asap, sans-serif;
+  color: #0a0a0a;
+  text-shadow: 3px;
+}
+
+/* SERVIÇOS */
+
+#serviços {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+}
+#serviços div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+}
+
+#serviços img {
+  width: 260px;
+  height: 140px;
+}
+/* BOTOES */
+
+.botao {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #191970;
+  font-size: 0.9em;
+  border-radius: 3px;
+}
+
+/* SOBRE */
+
+#sobre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 10px 20px 20px;
+  background-color: #46b9ee;
+  color: #ffffff;
+}
+
+#sobre h2 {
+  color: #ffffff;
+}
+
+#sobre p {
+  margin-bottom: 2.5em;
+  max-width: 1000px; /*para telas grandes nao precisar esticar tanto o site */
+}
+
+#sobre .botao {
+  background-color: #f1f1f1;
+  color: #1c1c1c;
+}
+
+/* carrosel */
+
+/*serve para carregar o site de acordo com o tipo de tela */
+@media screen and (min-width: 768px) {
+  /*SERVIÇOS*/
+  #serviços {
+    flex-direction: row;
+    flex-wrap: wrap; /*quebra de linha */
+    align-items: flex-start;
+    max-width: 1000px; /*largura maxima*/
+    margin: 0 auto; /*para ajustar a distancia */
+  }
+
+  #serviços h2 {
+    text-align: center;
+    width: 100%;
+  }
+
+  #serviços div {
+    flex-grow: 1;
+    flex-basis: 150px; /*tamanho maximo para todoas as flex*/
+    padding: 0 10px;
+  }
+}
