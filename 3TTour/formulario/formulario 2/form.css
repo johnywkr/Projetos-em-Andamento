@@ -1,0 +1,42 @@
+body {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(29, 125, 214, 0.904);
+  width: auto;
+  height: 100%;
+  /*background-image: url(https://www.rj.senac.br/wp-content/uploads/2022/01/retorno-das-atividades-nas-unidades-do-senac-rj-e-adiado-para-5-de-janeiro-3.png);
+   background-repeat: no-repeat;
+  background-size: 100% ;
+  background-attachment: scroll; */
+}
+
+input {
+  display: flex;
+  padding: 2%;
+  margin-left: 25%;
+  margin-bottom: 10px;
+  box-shadow: rgb(232, 234, 235) 3px 1px;
+}
+
+label,
+.sexo {
+  display: flex;
+  margin-left: 25%;
+  margin-bottom: 10px;
+}
+
+button {
+  width: 150px;
+  padding: 2%;
+  margin-top: 30px;
+  margin-left: 30%;
+  margin-bottom: 10px;
+}
+
+button:hover {
+  background-color: #060afa;
+  color: rgba(253, 251, 251, 0.904);
+  font-size: 20px;
+}
+
+

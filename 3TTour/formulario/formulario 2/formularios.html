@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head lang="pt-BR">
+  <meta charset="utf-8" />
+  <title>Exemplo de formulário</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="form.css" />
+  <script src="teste.js"></script>
+</head>
+<body>
+  <form class="imput">
+    <h1>Formulário Graduação Senac-DF</h1>
+
+    <label for="text0">Matrícula:</label>
+    <input name="text0" id="text0" type="texto0" />
+
+    <label for="num1">CPF:</label>
+    <input id="nu1m" type="testo0" />
+
+    <label for="passw1">Senha:</label>
+    <input id="passw1" type="password" />
+
+    <label for="text3">Telefone:</label>
+    <input name="text3" id="text3" type="number" />
+
+    <label for="date1">Data de Nascimento:</label>
+    <input id="date1" type="date" />
+
+    <div class="sexo">
+      Sexo:
+      <select name="select">
+        <option value="valor1" selected>Masculino</option>
+        <option value="valor2" selected>Feminino</option>
+      </select>
+    </div>
+    <div>
+      <button onclick="validar()">Validar</button>
+    </div>
+  </form>
+</body>
